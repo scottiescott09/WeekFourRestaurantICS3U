@@ -44,37 +44,34 @@ public class Main {
 				System.out.println("Menu:");
 				System.out.println("1. Drake's Water | 1.99$");
 				System.out.println("2. Drake's Crazy Fries | 4.99$");
-				System.out.println("  3. Drake's White Sauce | 0.50$");
+				System.out.println("3. Drake's White Sauce | 0.50$");
 				System.out.println("4. Drake's Fun Burger | 6.99$");
 				System.out.println("5. Drake's Purple Sprite | 2.50$");
-		int Order2 = in.nextInt();
-		if (Order2 == 2) {
-				System.out.println("How many orders of Drakes crazy fries would you like?");
-				int Amount2 = in.nextInt();
-				in.nextLine();
-				double tax2 = 1.13;
-				double price2 = 4.99;
-				int quantity2 = Amount2;
-				double fullprice2 = tax2 * price2 * quantity2;
-				System.out.println("Would you like to go back to the menu?: Y / N");
-				String Menu2 = in.nextLine();
-			if (Menu2.equalsIgnoreCase("y")) {
-				System.out.println("Menu:");
-				System.out.println("1. Drake's Water | 1.99$");
-				System.out.println("2. Drake's Crazy Fries | 4.99$");
-				System.out.println("  3. Drake's White Sauce | 0.50$");
-				System.out.println("4. Drake's Fun Burger | 6.99$");
-				System.out.println("5. Drake's Purple Sprite | 2.50$");
+		} else if (Order == 2) {
+			System.out.println("How many Drake's Crazy fries would you like? : ");
+			int Amount2 = in.nextInt();
+			in.nextLine();
+			double tax2 = 1.13;
+			double price2 = 4.99;
+			int quantity2 = Amount2;
+			double fullprice2 = tax2 * price2 * quantity2;
+			System.out.println("Would you like to go back to the menu?: Y/N ");
+			String Menu2 = in.nextLine();
+//			if (Menu2.equalsIgnoreCase("y")) {
+//				System.out.println("Menu:");
+//				System.out.println("1. Drake's Water | 1.99$");
+//				System.out.println("2. Drake's Crazy Fries | 4.99$");
+//				System.out.println("  3. Drake's White Sauce | 0.50$");
+//				System.out.println("4. Drake's Fun Burger | 6.99$");
+//				System.out.println("5. Drake's Purple Sprite | 2.50$");
+//			}
+//
+//			else {
+//				System.out.println("Your total will be: " + fullprice2);
 				}
 
-			else {
-				System.out.println("Your total will be: " + fullprice);
-			}
-
-				}
 			}
 		}
-
 	}
 
-}
+//}
